@@ -1,0 +1,177 @@
+# AI Security Dataset .gitignore
+# This is a collection of Solidity projects, so we ignore common build artifacts
+# and development files from Hardhat, Foundry, Truffle, and other tools
+
+# ===========================
+# Node.js / NPM / Yarn
+# ===========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.yarn-integrity
+.pnp
+.pnp.js
+
+# ===========================
+# Hardhat
+# ===========================
+cache/
+artifacts/
+deployments/
+.hardhat/
+
+# Hardhat ignores
+coverage/
+coverage.json
+typechain/
+typechain-types/
+
+# ===========================
+# Foundry
+# ===========================
+out/
+cache_forge/
+broadcast/
+lib/
+.forge-cache/
+forge-cache/
+
+# Foundry artifacts
+*/out/
+*/cache_forge/
+*/broadcast/
+*/lib/
+
+# ===========================
+# Compilation artifacts
+# ===========================
+*.abi
+*.bin
+*.deployed
+*.sol.js
+combined.json
+
+# ===========================
+# Environment variables
+# ===========================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Sensitive data
+.secret
+.mnemonic
+private.key
+secrets.json
+
+# ===========================
+# IDE and Editor files
+# ===========================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Vim
+*.vim
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# ===========================
+# OS generated files
+# ===========================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Nested DS_Store files
+*/.DS_Store
+**/.DS_Store
+
+# ===========================
+# Python (for testing/scripts)
+# ===========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# ===========================
+# Testing and Coverage
+# ===========================
+coverage/
+.nyc_output
+lcov.info
+coverage.lcov
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Gas reports
+gas-report.txt
+.gas-snapshot
+gas-snapshots/
+
+# ===========================
+# Logs
+# ===========================
+*.log
+logs/
+pids/
+*.pid
+*.seed
+
+# ===========================
+# Temporary files
+# ===========================
+*.tmp
+*.temp
+.tmp/
+.temp/
+tmp/
+
+# ===========================
+# Documentation
+# ===========================
+docs/build/
+site/
+
+# ===========================
+# Misc
+# ===========================
+.cache/
+dist/
+*.tgz
+*.tar.gz
+
+# Slither results
+slither-results/
+*.sarif
+
+# Mythril results
+*.myth
+
+# ===========================
+# Git directories from nested projects
+# ===========================
+# Remove any nested .git directories to avoid submodule issues
+#*/.git/
+#**/.git/
